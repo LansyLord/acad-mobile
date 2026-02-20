@@ -5,14 +5,12 @@ const Login = () => {
 
         <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
             <h2>Criar Conta</h2>
-            <form onSubmit={handleSubmit}>
+            <form >
                 <div>
                     <label>Email: </label>
                     <input
                         type="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleChange}
                         required
                     />
                 </div>
@@ -21,8 +19,6 @@ const Login = () => {
                     <input
                         type="password"
                         name="senha"
-                        value={formData.senha}
-                        onChange={handleChange}
                         required
                     />
                 </div>
